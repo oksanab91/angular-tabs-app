@@ -1,0 +1,16 @@
+  <div class="tab-pane container active" id="tests">
+    <h3>
+        Test List
+    </h3>
+
+    <div class="row">
+        <div class="col-5 col-sm-4"><h5>Name</h5></div>
+        <div class="col-7 col-sm-8"><h5>Description</h5></div>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let test of tests">
+            <div class="col-5 col-sm-4">{{ test.name }}</div>
+            <div class="col-7 col-sm-8">{{ test.description }}</div>
+        </ng-container>          
+    </div>
+  </div>
